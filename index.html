@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Forest Landing Page | Nothing4us </title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+    <title>Parallax Scrolling Website</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">BAGIYA</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png" id="bird1">
+        <img src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png" id="bird2">
+        <img src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png" id="forest">
+        
+        <a href="#" id="btn">Explore</a>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png" id="rocks">
+        <img src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png" id="water">
+    </Section>
+    
+    <div class="sec">
+        <h2>Forest Landing Page with Parallax Scrolling Effects</h2>
+        <p>For the forest-themed landing page, the concept revolves around creating an immersive experience that draws users into the serenity and mystery of the forest. The design elements likely include a backdrop of lush greenery, towering trees, and possibly a soothing color palette that evokes nature’s beauty. The landing page invites visitors to journey into a tranquil environment, where the parallel scrolling effects play a key role in enhancing the user’s engagement and interaction. As users scroll through the page, they experience a seamless visual flow, creating a sense of movement as if walking through the forest themselves.
+<br><br>
+The parallel scrolling effect is an essential feature that sets the design apart from conventional static pages. This technique creates a layered visual experience, where different elements of the forest scene move at varying speeds, adding depth and a 3D-like effect to the page. For instance, foreground elements like leaves and branches might scroll faster than the distant tree line or the sky, mimicking the natural perspective shift you would observe when walking through a real forest. This visual storytelling keeps users engaged, as each scroll reveals new layers of the forest environment.
+<br><br>
+Another important aspect of the landing page is its responsiveness to user interaction. With parallel scrolling, the content is revealed gradually, enticing visitors to keep scrolling to explore what lies ahead. This gradual unveiling enhances user experience by not overwhelming the viewer with too much information at once, but instead creating a sense of discovery. Each scroll could also trigger subtle animations, such as the swaying of tree branches or the fluttering of birds, adding to the forest's dynamic and living feel.
+<br><br>
+The harmony between content and design is crucial to the page's success. While the parallel scrolling effect is visually engaging, it also serves a functional purpose by guiding users through the key messages or features of the site. Strategic placement of content alongside these effects ensures that the user’s attention is directed to important sections, whether it’s a call-to-action, product feature, or an invitation to learn more about environmental initiatives. This careful balance between design and usability helps create an intuitive and enjoyable browsing experience.
+<br><br>
+In conclusion, the forest-themed landing page with its parallel scrolling effects offers a captivating journey for users, blending design, interaction, and storytelling. The motion and depth created by the scrolling effect elevate the overall aesthetic and make the page stand out, ensuring that visitors not only engage with the content but also remember their experience. Through thoughtful design choices, the landing page becomes more than just a point of information; it becomes an interactive exploration of nature itself.</p>
+    </div>
+    
+    
+    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+    
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
